@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Invitation 💌</title>
+
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: Arial;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+
+        #yesButton {
+            background-color: red;
+            color: white;
+        }
+
+        #noButton {
+            background-color: white;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>💌Invitation</h1>
+
+    <p>Pwede ba kitang ayain bukas magcheck in? ❤️</p>
+
+    <p>Kung sakaling may makukuha lang naman akong pera?</p>
+
+    <button id="yesButton" onclick="yes()">YES! ❤️</button>
+
+    <button id="noButton" onclick="no()">NO 😭</button>
+
+    <script>
+        function yes() {
+            alert("YOOOWN PUMAYAG💦");
+        }
+
+        function no() {
+            let button = document.getElementById("noButton");
+
+            button.style.position = "absolute";
+            button.style.left = Math.random() * 80 + "%";
+            button.style.top = Math.random() * 80 + "%";
+        }
+    </script>
+
+</body>
+
+</html>
